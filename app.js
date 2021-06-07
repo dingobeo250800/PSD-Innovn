@@ -7,27 +7,31 @@ function closeMenu() {
     document.getElementById("leftMenu").style.display = "none";
 }
 
-//header-onscroll
-// const close1 = document.getElementById("info");
-// const banner1 = document.getElementById("onscroll-Event");
-// const banner2 = document.getElementById("onscroll-Event2");
-// function myFunction(){
-//     if(document.body.scrollTop >50 || document.documentElement.scrollTop >50){
-//         banner1.style.position = "fixed";
-//         banner1.style.marginTop = 0;
-//         banner1.style.zIndex = 100;
-//         close1.style.display ="none";
+let close1 = document.getElementById("top")
+let onscoll1 = document.getElementById("onscroll-Event");
+let onscoll2 = document.getElementById("onscroll-Event2");
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        onscoll1.style.position = "fixed";
+        onscoll1.style.marginTop = 0;
+        onscoll1.style.zIndex = 100;
+        onscoll1.style.backgroundColor="#fff"
+        onscoll1.style.borderBottom="1px solid #b1b1b1"
 
-//         banner2.style.position = "fixed";
-//         banner2.style.marginTop = 0;
-//         banner2.style.zIndex = 100;
-//     }else{
-//         close1.style.display = "block"
-//         banner1.style.position = "absolute";
+        close1.style.display = "none";
 
-//         banner2.style.position = "absolute";
-//     }
-// }
-// window.onscroll = function(){
-//     myFunction();
-// }
+        onscoll2.style.position = "fixed";
+        onscoll2.style.marginTop = 0;
+        onscoll2.style.zIndex = 100;
+        onscoll2.style.backgroundColor="#fff"
+        onscoll2.style.borderBottom="1px solid #b1b1b1"
+    } else {
+        close1.style.display = "block";
+        onscoll1.style.position = "";
+        onscoll2.style.position = "";
+
+    }
+}
+window.onscroll = function () {
+    myFunction()
+};

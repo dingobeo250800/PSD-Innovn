@@ -506,10 +506,10 @@ opacity: 1;
 }
 
 @media only screen and (min-width: 1024px) {
-    .a{
+    .nav-x{
         display: none;
     }
-    .b{
+    .nav-y{
         display: block;
     }
     
@@ -518,10 +518,10 @@ opacity: 1;
     .header-banner .banner-contnet {
         left: 0%;
     }
-    .a{
+    .nav-x{
         display: block;
     }
-    .b{
+    .nav-y{
         display: none;
     }
     
