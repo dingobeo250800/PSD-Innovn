@@ -47,7 +47,7 @@
                         <a href=""><img src="./img/logo/LogoGroup.jpg" alt=""></a>
                     </div>
                     <div class="header-navbar-sidebar d-flex align-items-center ">
-                        <div class="nav-search">
+                        <div class="nav-search" data-toggle="modal" data-target="#Modalsearech">
                             <i class="fas fa-search"></i>
                         </div>
                         <div class="nav-mb" onclick="openMenu()">
@@ -70,7 +70,8 @@
                             <li class="menu-item"><a href="">DỰ ÁN</a></li>
                             <li class="menu-item"><a href="">TIN TỨC</a></li>
                             <li class="menu-item"><a href="">LIÊN HỆ</a></li>
-                            <li class="menu-item"><a href=""><i class="fas fa-search"></i></a></li>
+                            <li class="menu-item "><a href="" data-toggle="modal" data-target="#Modalsearech"><i
+                                        class="fas fa-search"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,6 +86,21 @@
             </div>
         </div>
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="Modalsearech" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content-shearch">
+                <div class="search text-center mt-4">
+                    <div class="search-h1">Tìm Kiếm</div>
+                    <form action="">
+                        <input type="text">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- sideBar -->
     <div class="sidebar-on_off">
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left "
@@ -121,60 +137,162 @@
         </div>
     </div>
     <main>
-        <div class="container product">
+        <section class="container home__product">
             <div class="title-all">
                 <h2 class="title-h2">SẢN PHẨM CHÍNH
                 </h2>
                 <p class="title-p">you will really enjoy business with us! Fast, electrical estimates at a competitive
-                    price.</p>
-                <p class="title-p2">We save you time and monney. Intested? check our photos.</p>
+                    price. <br>
+                    We save you time and monney. Intested? check our photos.</p>
             </div>
-            <div class="product-item">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY NCN</h4>
+            <div class="home__product-inner">
+                <ul class="nav nav-pills" id="home-product" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-product1-tab" data-toggle="pill" href="#home-product1"
+                            role="tab" aria-controls="home-product1" aria-selected="true">Máy tách màu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product2-tab" data-toggle="pill" href="#home-product2" role="tab"
+                            aria-controls="home-product2" aria-selected="false">Máy CNC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product3-tab" data-toggle="pill" href="#home-product3" role="tab"
+                            aria-controls="home-product3" aria-selected="false">Máy CHế Tác Đá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product4-tab" data-toggle="pill" href="#home-product4" role="tab"
+                            aria-controls="home-product4" aria-selected="false">Máy In UV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product5-tab" data-toggle="pill" href="#home-product5" role="tab"
+                            aria-controls="home-product5" aria-selected="false">Máy Laser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product6-tab" data-toggle="pill" href="#home-product6" role="tab"
+                            aria-controls="home-product6" aria-selected="false">Dây chuyền sản xuất</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product7-tab" data-toggle="pill" href="#home-product7" role="tab"
+                            aria-controls="home-product7" aria-selected="false">Máy CŨ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-product8-tab" data-toggle="pill" href="#home-product8" role="tab"
+                            aria-controls="home-product8" aria-selected="false">Khác</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content home-product__content" id="home-productContent">
+                <div class="tab-pane fade show active" id="home-product1" role="tabpanel" aria-labelledby="home-product1-tab">
+                    <div class="home_product-carousel"
+                        data-flickity='{ "cellAlign": "left","contain":true ,"imagesLoaded":true,"pageDots":false,"autoPlay": 2500}'>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/logo/prd1.jpg" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY CHẾ TÁC ĐÁ</h4>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/logo/prd2.jpg" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY PHÂN TÁCH MÀU</h4>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/logo/prd3.jpg" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY TIN UV</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY LASER</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">MÁY CŨ</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">DÂY CHUYỀN SẢN XUẤT</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 item">
-                        <div class="item-h4">
-                            <h4 class="item-name">KHÁC</h4>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/logo/prd4.jpg" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="product-slide">
-                <div
+                <div class="tab-pane fade " id="home-product2" role="tabpanel" aria-labelledby="home-product2-tab">
+                    <div class="home_product-carousel"
+                        data-flickity='{ "cellAlign": "left","contain":true ,"imagesLoaded":true,"pageDots":false,"autoPlay": 2500}'>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/may-phan-loai-hat-nhua-theo-chat-lieu-1.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/may-tach-nhua-nguyen-chai-theo-chat-lieu-600x400.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/zun-pro-600x400.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/大米2通道-600x400.png " alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/大米单通道-600x400.png " alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="home-product3" role="tabpanel" aria-labelledby="home-product3-tab">
+                    <div class="home_product-carousel"
                     data-flickity='{ "cellAlign": "left","contain":true ,"imagesLoaded":true,"pageDots":false,"autoPlay": 2500}'>
                     <div class="col-lg-3 col-md-4">
                         <div class="slide-img">
@@ -221,190 +339,130 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                <div class="tab-pane fade " id="home-product4" role="tabpanel" aria-labelledby="home-product4-tab">
+                    <div class="home_product-carousel"
+                        data-flickity='{ "cellAlign": "left","contain":true ,"imagesLoaded":true,"pageDots":false,"autoPlay": 2500}'>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/may-phan-loai-hat-nhua-theo-chat-lieu-1.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/may-tach-nhua-nguyen-chai-theo-chat-lieu-600x400.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/zun-pro-600x400.png" alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/大米2通道-600x400.png " alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="slide-img">
+                                <img src="./img/mayCNC/大米单通道-600x400.png " alt="">
+                                <a href="">
+                                    <div class="product__slide-title text-center">
+                                        <p>MÁY CNC ĐIÊU KHẮC ĐÁ</p>
+                                        <span>HỖN HỢP 3D & 4D</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="home-product5" role="tabpanel" aria-labelledby="home-product5-tab">
+                </div>
+                <div class="tab-pane fade " id="home-product6" role="tabpanel" aria-labelledby="home-product6-tab">
+                </div>
+                <div class="tab-pane fade " id="home-product7" role="tabpanel" aria-labelledby="home-product7-tab">
+                </div>
+                <div class="tab-pane fade " id="home-product8" role="tabpanel" aria-labelledby="home-product8-tab">
+                </div>
+
             </div>
-        </div>
+        </section>
+
         <div class="container section_highlight">
             <div class="title-all">
                 <h2 class="title-h2">DỰ ÁN TIÊU BIỂU
                 </h2>
                 <p class="title-p">you will really enjoy business with us! Fast, electrical estimates at a competitive
-                    price.</p>
-                <p class="title-p2">We save you time and monney. Intested? check our photos.</p>
+                    price. <br>
+                    We save you time and monney. Intested? check our photos.</p>
             </div>
             <div class=" section_highlight-img">
                 <div class=" row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/ANH1.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/anh2.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/anh3.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/anh4.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/anh5.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="highlight-img">
+                        <a href="" class="highlight-img">
                             <img src="./img/product/anh6.jpg" alt="">
-                            <div class="product__img-icon d-flex align-items-center">
-                                <div class="img-icon mt-auto">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                                <div class="img-icon">
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class=" container section__video">
             <div class="title-all">
-                <h2 class="title-h2">DI DEO NỔI BẬT
+                <h2 class="title-h2">VIDEO NỔI BẬT
                 </h2>
                 <p class="title-p">you will really enjoy business with us! Fast, electrical estimates at a competitive
-                    price.</p>
-                <p class="title-p2">We save you time and monney. Intested? check our photos.</p>
+                    price. <br>
+                    We save you time and monney. Intested? check our photos.</p>
             </div>
             <div class="video-play">
                 <div class="row">
@@ -430,10 +488,14 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <video width="100%" controls>
+                        <iframe width="860" height="515" src="https://www.youtube.com/embed/Eeouy6UaAwI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <!-- <video width="100%" controls>
                             <source src="./y2mate.com - MÁY XÚC ĐẤT  XE TẢI TO  NHẠC THIẾU NHI SÔI ĐỘNG_360p.mp4"
                                 type="video/mp4">
-                        </video>
+                        </video> -->
                     </div>
                 </div>
             </div>
@@ -442,11 +504,15 @@
         <div class="modal fade" id="play-video2">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-body">
-                        <video width="100%" controls>
+                    <div class="modal-body text-center">
+                        <iframe width="860" height="515" src="https://www.youtube.com/embed/Eeouy6UaAwI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <!-- <video width="100%" controls>
                             <source src="./y2mate.com - MÁY XÚC ĐẤT  XE TẢI TO  NHẠC THIẾU NHI SÔI ĐỘNG_360p.mp4"
                                 type="video/mp4">
-                        </video>
+                        </video> -->
                     </div>
                 </div>
             </div>
@@ -456,11 +522,12 @@
                 <h2 class="title-h2">TIN TỨC MỚI
                 </h2>
                 <p class="title-p">you will really enjoy business with us! Fast, electrical estimates at a competitive
-                    price.</p>
-                <p class="title-p2">We save you time and monney. Intested? check our photos.</p>
+                    price. <br>
+                    We save you time and monney. Intested? check our photos.</p>
             </div>
             <div class="container new-item">
-                <div class="row">
+                <div
+                    data-flickity='{ "cellAlign": "left","contain":true ,"imagesLoaded":true,"pageDots":false,"autoPlay": 2500}'>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="new__item-card">
                             <div class="imgBx">
@@ -470,7 +537,7 @@
                                 <div class="item-title-p">
                                     14/ 10/ 2020
                                 </div>
-                                <div class="item-title-p2">
+                                <div class="item-title-p2 title-p2 ">
                                     <a href=""> Cách sử dụng máy lase hiệu quả và an toàn nhất</a>
                                 </div>
                                 <div class="item-title-p3">
@@ -492,7 +559,7 @@
                                 <div class="item-title-p">
                                     14/ 10/ 2020
                                 </div>
-                                <div class="item-title-p2">
+                                <div class="item-title-p2 title-p2">
                                     <a href=""> Cách sử dụng máy lase hiệu quả và an toàn nhất</a>
                                 </div>
                                 <div class="item-title-p3">
@@ -514,7 +581,7 @@
                                 <div class="item-title-p">
                                     14/ 10/ 2020
                                 </div>
-                                <div class="item-title-p2">
+                                <div class="item-title-p2 title-p2">
                                     <a href=""> Cách sử dụng máy lase hiệu quả và an toàn nhất</a>
                                 </div>
                                 <div class="item-title-p3">
@@ -532,11 +599,11 @@
         </div>
         <div class="section-customer">
             <div class="title-all">
-                <h2 class="title-h2">KHÁCH HÀNG CHÚNG TÔI
+                <h2 class="title-h2">ĐỐI TÁC CỦA CHÚNG TÔI
                 </h2>
                 <p class="title-p">you will really enjoy business with us! Fast, electrical estimates at a competitive
-                    price.</p>
-                <p class="title-p2">We save you time and monney. Intested? check our photos.</p>
+                    price. <br>
+                    We save you time and monney. Intested? check our photos.</p>
             </div>
             <div class="container customer-logo">
                 <div
@@ -548,17 +615,17 @@
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <div class="slide-img">
-                            <img src="./img/logo/Layer1.png" alt="">
+                            <img src="./img/logo/Layer2.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <div class="slide-img">
-                            <img src="./img/logo/Layer1.png" alt="">
+                            <img src="./img/logo/Layer3.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <div class="slide-img">
-                            <img src="./img/logo/Layer1.png" alt="">
+                            <img src="./img/logo/Layer4.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -567,20 +634,20 @@
                 <div class="container customer-service">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-                            <a href="">
-                                <div class="service-icon">
-                                    <img src="./img/icon/oto.png" alt="">
-                                    <p>MIỄN PHÍ</p>
-                                    <p>GIAO HÀNG</p>
-                                </div>
-                            </a>
+                            <div class="service-icon">
+                                <img src="./img/icon/oto.png" alt="">
+                                <a href="">
+                                    <p>MIỄN PHÍ GIAO HÀNG</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
                             <a href="">
                                 <div class="service-icon">
                                     <img src="./img/icon/hotro.png" alt="">
-                                    <p>HỖ TRỢ</p>
-                                    <p>TƯ VẤN 24/7</p>
+                                    <a href="">
+                                        <p>HỖ TRỢ TƯ VẤN 24/7</p>
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -588,8 +655,9 @@
                             <a href="">
                                 <div class="service-icon">
                                     <img src="./img/icon/baohanh.png" alt="">
-                                    <p>BẢO HÀNH</p>
-                                    <p>LÊN ĐẾN 2 NĂM</p>
+                                    <a href="">
+                                        <p>BẢO HÀNH LÊN ĐẾN 2 NĂM</p>
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -597,8 +665,9 @@
                             <a href="">
                                 <div class="service-icon">
                                     <img src="./img/icon/thutuc.png" alt="">
-                                    <p>THỦ TỤC</p>
-                                    <p>ĐƠN GIẢN</p>
+                                    <a href="">
+                                        <p>THỦ TỤC ĐƠN GIẢN</p>
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -629,15 +698,15 @@
                                 <a href="">
                                     <span><img src="./img/icon/mail.png" alt=""></span>
                                 </a>
-                                <a href="">
+                                <a href="mailto:lienhe@innovn.com">
                                     <span>Email: lienhe@innovo.com</span>
                                 </a>
                             </div>
                             <div class="contact-icon">
-                                <a href="">
+                                <a href="tel:0986331122">
                                     <span><img src="./img/icon/phone.png" alt=""></span>
                                 </a>
-                                <a href="">
+                                <a href="tel: 0986331122">
                                     <span>Điện Thoại: 0986 33 11 22</span>
                                 </a>
                             </div>
@@ -658,7 +727,7 @@
                                 <a href="">
                                     <span><img src="./img/icon/phone.png" alt=""></span>
                                 </a>
-                                <a href="">
+                                <a href="tel: 0975331155">
                                     <span>Điện Thoại: 0975 33 11 55</span>
                                 </a>
                             </div>
@@ -675,9 +744,8 @@
                                 <a href="">
                                     <span><img src="./img/icon/phone.png" alt=""></span>
                                 </a>
-                                <a href="">
-                                    <span>Điện Thoại: 0975 33 11
-                                        55</span>
+                                <a href="tel: 0975331155">
+                                    <span>Điện Thoại: 0975 33 11 55</span>
                                 </a>
                             </div>
                         </div>
@@ -734,11 +802,6 @@
             </div>
         </div>
     </footer>
-    <div class="mobile_animation">
-        <a href="tel:0344294602">
-            <img style="width: 20px; height: 20px;" src="./img/icon/phone.png" alt="">
-        </a>
-    </div>
 </body>
 <!-- jsboostrap -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -750,11 +813,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
+
 <!-- jsStyky -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+
+    $('.home__product .home__product-inner .nav-pills').on('shown.bs.tab', function (event) {
+        console.log(123);
+        $('.home-product__content .tab-pane .home_product-carousel').flickity('resize');
+    });
+</script>
 <script src="./app.js"></script>
 
 </html>
