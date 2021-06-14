@@ -459,12 +459,10 @@ opacity: 1;
 .footer-bottom .footer__bottom-title .bottom__title-icon .circle-icon a:hover{
     color: #fff;
 }
-
-
-
 .footer__bottom-title a{
     text-decoration: none;
 }
+
 .footer__bottom-title .bottom__title-icon >a{
     margin-right: 10px;
     color: #939598 ;

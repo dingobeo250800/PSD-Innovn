@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:HK Nova;
+}
+@font-face {
+    font-family:HK Nova;
+    src:url('../font/HKNova-Regular.otf');
+    font-weight:400;
+   }
+    @font-face {
+    font-family:HK Nova;
+    src:url('../font/HKNova-SemiBold.otf');
+    font-weight:600;
+    }
+    @font-face {
+    font-family:HK Nova;
+    src:url('../font/HKNova-Medium.otf');
+    font-weight:500;
+    }
+    @font-face {
+    font-family:HK Nova;
+    src:url('../font/HKNova-SemiBold.otf');
+    font-weight:700;
+    }
+/* header-bannerGT */
+.header-wrap .header-bannerLH{
+    background-image: url("./img/gioithieu/BnGioithieu.jpg");
+    height: 275px;
+    margin-top: -10px;
+    position: relative;
+}
+.header-wrap .header-bannerLH::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a2a196;
+    opacity: .3;
+}
+.header-wrap .header-bannerLH .banner-contnetLH{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-bannerLH .banner-contnetLH .banner-contnetLH__h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+.header-bannerLH .banner-contnetLH .banner-contnetLH__p{
+    color: #fff;
+    font-size: 15px;
+    font-family:HK Nova;
+}
+/* contact-content */
+.contact-content{
+    margin-top: 67px;
+}
+.contact-content .contact-content__title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #3a3a3a;
+    position: relative;
+}
+.contact-content .contact-content__title::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+    border-bottom: 3px solid #0063b0;
+}
+.contact-content .contact-desc .contact-desc-h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0063b0;
+}
+.contact-content .contact-desc .contact-desc-p {
+    color: #3a3a3a;
+    font-weight: 400;
+}
+.contact-content .contact-desc .contact-desc-p a{
+    text-decoration: none;
+    color: #0063b0;
+}
+.contact-form{
+    margin-bottom: 67px;
+}
+.contact-form .form-input input{
+    width: 100%;
+    height: 57px;
+    border-radius: 3px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #dadbdc;
+    margin-bottom: 16px;
+}
+.contact-form a .content-btnGt{
+    width: 160px;
+    height: 46px;
+    margin-top: 23px;
+    background-color: #f4811e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+/* section-map */
+.section-map{
+    margin-bottom: -8px;
+}
