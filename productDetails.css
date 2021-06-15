@@ -133,3 +133,8 @@
 .relate__product .relate__product-img{
     margin-bottom: 61px;
 }
+@media screen and (max-width: 769px) {
+    .section-product .section-product__img >img{
+        width: 100%;
+    }
+}
