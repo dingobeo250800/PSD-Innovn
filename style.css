@@ -642,11 +642,53 @@ opacity: 1;
     border: none !important;
 }
 
+
+/* add__item */
+/* ---button back to home */
+#item__btn-back {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 1px #000;
+  }
+  #item__btn-back>i{
+    font-size: 15px;
+    line-height: 50px;
+    color: #fff;
+  }
+
+  #item__btn-back:hover {
+    cursor: pointer;
+    background-color: #0063b0;
+  }
+  #item__btn-back:active {
+    background-color: #0063b0;
+  }
+  #item__btn-back.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  /* mobile_animation */
 .mobile_animation{
     position: fixed;
-    top: 75%;
-    right: 5%;
-    z-index: 999;
+    right: 80px;
+    bottom: 80px;
+    z-index: 1001;
 }
 .mobile_animation> a{
     display: block;
@@ -655,6 +697,7 @@ opacity: 1;
     background-color: rgb(0, 99, 176);
     border-radius: 50%;
     position: relative;
+    transition: .5s;
 }
 .mobile_animation> a::before{
     content: "";
@@ -671,6 +714,22 @@ opacity: 1;
     margin: auto;
     border-radius: 50%;
     animation: 1.5s infinite phone-bg-animation;
+}
+.mobile_animation> a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(0, 99, 176);
+    opacity: .2;
+    top: 0;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    animation: 1.5s infinite phone-bgAfter-animation;
 }
 .mobile_animation> a img{
     position: absolute;
@@ -704,6 +763,17 @@ opacity: 1;
 }
 @keyframes phone-bg-animation{
     0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+@keyframes phone-bgAfter-animation{
+    0% {
         transform: scale(0.7);
     }
     50% {
@@ -713,3 +783,5 @@ opacity: 1;
         transform: scale(0.7);
     }
 }
+  
+ 

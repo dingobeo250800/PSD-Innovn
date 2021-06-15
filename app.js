@@ -36,3 +36,27 @@ window.onscroll = function () {
     myFunction()
 };
 
+
+
+
+//CodePen Home Back to Top Button
+
+var btnBack = $('#item__btn-back');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btnBack.addClass('show');
+  } else {
+    btnBack.removeClass('show');
+  }
+});
+
+btnBack.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+
+
