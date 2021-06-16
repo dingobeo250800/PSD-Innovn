@@ -3,6 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:HK Nova;
+}
+@font-face {
+    font-family:HK Nova;
+    src:url('./font/HKNova-Regular.otf');
+    font-weight:400;
+   }
+    @font-face {
+    font-family:HK Nova;
+    src:url('./font/HKNova-SemiBold.otf');
+    font-weight:600;
+    }
+    @font-face {
+    font-family:HK Nova;
+    src:url('./font/HKNova-Medium.otf');
+    font-weight:500;
+    }
+    @font-face {
+    font-family:HK Nova;
+    src:url('./font/HKNova-SemiBold.otf');
+    font-weight:700;
+    }
 /* .section-product */
 .section-product{
     margin-top: 70px;

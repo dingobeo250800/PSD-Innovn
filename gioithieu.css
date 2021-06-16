@@ -8,22 +8,22 @@ body{
 }
 @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-Regular.otf');
+    src:url('./font/HKNova-Regular.otf');
     font-weight:400;
    }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-SemiBold.otf');
+    src:url('./font/HKNova-SemiBold.otf');
     font-weight:600;
     }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-Medium.otf');
+    src:url('./font/HKNova-Medium.otf');
     font-weight:500;
     }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-SemiBold.otf');
+    src:url('./font/HKNova-SemiBold.otf');
     font-weight:700;
     }
 /* header-bannerGT */
@@ -91,15 +91,25 @@ margin: 80px 0;
     margin-top: 32px;
     margin-bottom: 0;
 }
+.about-top .about-top__content>a {
+    text-decoration: none;
+}
 .about-top .about-top__content a .content-btnGt{
     width: 160px;
     height: 46px;
     margin-top: 32px;
+    text-align: center;
+    line-height: 46px;
     background-color: #f4811e;
     color: #fff;
     border: none;
     border-radius: 3px;
     outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.about-top .about-top__content a .content-btnGt:hover{
+background-color: #0063b0;
 }
 /* about-mid */
 .about-mid{
@@ -108,6 +118,9 @@ margin: 80px 0;
     height: 339px;
     object-fit: cover;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .about-mid::before{
     content: "";
@@ -166,7 +179,7 @@ margin: 80px 0;
         transform: translateX(-50%);
     }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 767px) {
     .about-mid {
         height: 678px;
         object-fit: cover;

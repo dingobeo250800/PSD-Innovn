@@ -8,22 +8,22 @@ body{
 }
 @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-Regular.otf');
+    src:url('./font/HKNova-Regular.otf');
     font-weight:400;
    }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-SemiBold.otf');
+    src:url('./font/HKNova-SemiBold.otf');
     font-weight:600;
     }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-Medium.otf');
+    src:url('./font/HKNova-Medium.otf');
     font-weight:500;
     }
     @font-face {
     font-family:HK Nova;
-    src:url('../font/HKNova-SemiBold.otf');
+    src:url('./font/HKNova-SemiBold.otf');
     font-weight:700;
     }
 
@@ -425,6 +425,10 @@ opacity: 1;
     padding: 0;
     height: 45px;
     line-height: 45px;
+    transition: .5s;
+}
+.footer-on .on__input .btn:hover{
+background-color: #0063b0;
 }
 .footer-on .on__input .btn >p{
     margin: 0;
